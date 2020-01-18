@@ -45,12 +45,14 @@ class App extends Component {
   render() {
     return(
       <div className = 'App'>
+      <p><strong>Me</strong></p>
       <UserCard 
           name = {this.state.name}
           email = {this.state.email}
           login = {this.state.login}
           avatar = {this.state.avatar}
           />
+          <p><strong>Followers</strong></p>
          {this.state.followers.map(followme => {
            return (
              <div className = 'followers'> 
