@@ -8,7 +8,7 @@ const UserCard = (props) => {
             <p>{props.name}</p>
             <p>{props.login}</p>
             <p>{props.email}</p>
-            <img src = {props.avatar} />
+            <img src = {props.avatar} alt=""/>
 
             
         </div>

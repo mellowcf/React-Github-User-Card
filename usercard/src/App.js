@@ -54,7 +54,7 @@ class App extends Component {
          {this.state.followers.map(followme => {
            return (
              <div className = 'followers'> 
-              <img src = {followme.avatar_url} />
+              <img src = {followme.avatar_url} alt=""/>
               <div className = 'followersinfo'>
                 <p>{followme.name}</p>
                 <p>USERNAME: {followme.login}</p>
