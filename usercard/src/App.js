@@ -44,11 +44,15 @@ class App extends Component {
 
   render() {
     return(
-     
       <div className = 'App'>
+      <UserCard 
+          name = {this.state.name}
+          email = {this.state.email}
+          login = {this.state.login}
+          avatar = {this.state.avatar}
+          />
          {this.state.followers.map(followme => {
            return (
-             
              <div className = 'followers'> 
               <img src = {followme.avatar_url} />
               <div className = 'followersinfo'>
@@ -58,20 +62,15 @@ class App extends Component {
                 <p> Here is my github url so you know where to find me! </p>
                 <p>{followme.html_url}</p>
               </div>
-               
-             </div>
-             
-           )
+               </div>
+             )
          }
           )}
 
         {console.log(this.state) }
-          <UserCard 
-          name = {this.state.name}
-          email = {this.state.email}
-          login = {this.state.login}
-          avatar = {this.state.avatar}
-          />
+          
+
+          
       </div>
     )
   }
